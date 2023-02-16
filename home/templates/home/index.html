@@ -1,0 +1,256 @@
+{% extends 'home/layout.html' %}
+{% load static %}
+{% block 'main' %}
+<section id="hero" class="hero" style="height:550px">
+
+    <div class="info d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2 data-aos="fade-down">Procurement and <span>Supply Management</span></h2>
+            <p data-aos="fade-up">We are the best procurement and supply management agency for all types of organizations in Nigeria.</p>
+            <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+      <div class="carousel-item active" style="background-image: url({% static 'home/img/hero-carousel/head-carousell-6.jpg' %})"></div>
+      <div class="carousel-item" style="background-image: url({% static 'home/img/hero-carousel/hero-carousel-1.jpg' %})"></div>
+
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+
+  </section><!-- End Hero Section -->
+
+ <section id="get-started" class="get-started section-bg">
+      <div class="container">
+
+        <div class="row justify-content-between gy-4">
+
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+            <div class="content">
+              <h3>We are the best Procurement Organization for all Industries in Nigeria.</h3>
+              <p>PilotKirk Limited is an indigenous company that deals comprehensively in procurement and supply of goods in Nigeria</p>
+              <p>We have grown from  being just supply chain management to a major contractor in various industries in Nigeria.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-5" data-aos="fade">
+            <form action="forms/quote.php" method="post" class="php-email-form">
+              <h3>Get a quote</h3>
+              <p>Reach out to us and get very fast response today.</p>
+              <div class="row gy-3">
+
+                <div class="col-md-12">
+                  <input type="text" name="name" class="form-control" placeholder="Name" required>
+                </div>
+
+                <div class="col-md-12 ">
+                  <input type="email" class="form-control" name="email" placeholder="Email" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="phone" placeholder="Phone" required>
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your quote request has been sent successfully. Thank you!</div>
+
+                  <button type="submit">Get a quote</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Quote Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Get Started Section -->
+
+    <!-- ======= Constructions Section ======= -->
+    <section id="constructions" class="constructions">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Our Works</h2>
+          <p>These are some of the many jobs we have done in recent times</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image: url({% static 'home/img/rot.jpeg' %});"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Procurement of Rotating Equipments</h4>
+                    <p>PilotKirk Provides exception services when it comes to the procurement and installation of rotating equipments.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image: url({% static 'home/img/constructions-4.jpg' %});"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Procurement of Construction Equipments</h4>
+                    <p>PilotKirk Provides exception services when it comes to the procurement and installation of construction equipments.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Constructions Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Services</h2>
+          <p>PilotKirk offers many services to all types of organizations in Nigeria</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-mountain-city"></i>
+              </div>
+              <h3>Procurement</h3>
+              <p>We assist companies and organizations to purchase goods and services necessary for their adequate running.</p>
+              <a href="#" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+              </div>
+              <h3>Supply Chain</h3>
+              <p>We assist companies to transport purchased items from point of purchase to point of usage.</p>
+              <a href="#" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-compass-drafting"></i>
+              </div>
+              <h3>Installation</h3>
+              <p>At PilotKirk, we do not only help purchase equipments, we also assist in the installation of such equipments.</p>
+              <a href="#" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+
+     <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Testimonials</h2>
+          <p>Hear what some of our clients have to say</p>
+        </div>
+
+        <div class="slides-2 swiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <h3>Peter Emmanuel</h3>
+                  <h4>Engineer</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    I recommend PilotKirk for a seamless procurement process. They help me purchase and transport and install a 20KVA generator set
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <h3>Sara Gospel</h3>
+                  <h4>Designer</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    PilotKirk is the number one when it comes to Procurement services in Nigeria. I highly Recommend them.
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    I was recommended to PilotKirk, I gave them a try and they beat my expectations now i am recommending them to everyone.
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section --> <!-- ======= Testimonials Section ======= -->
+
+{%endblock %}
